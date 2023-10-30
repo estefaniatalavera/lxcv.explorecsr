@@ -69,12 +69,10 @@ a,
 a:hover,
 a:focus {
   text-decoration: none;
+   color: #00bbf0;
 }
 
-a:hover,
-a:focus {
-  color: initial;
-}
+
 
 .btn,
 .btn:focus {
@@ -86,14 +84,16 @@ a:focus {
 /*header section*/
 .hero_area {
   position: relative;
-  min-height: 100vh;
+  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+    
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+
 }
 
 .hero_area .hero_bg_box {
@@ -127,7 +127,7 @@ a:focus {
 
 .sub_page .hero_area {
   min-height: auto;
-  background: linear-gradient(130deg, #231a6f, #0f054c);
+  background: linear-gradient(130deg, #231a6f, #0f054c);  
 }
 
 .sub_page .hero_area .hero_bg_box {
@@ -141,6 +141,7 @@ a:focus {
 .header_section .container-fluid {
   padding-right: 25px;
   padding-left: 25px;
+
 }
 
 .navbar-brand span {
@@ -339,39 +340,9 @@ a:focus {
 
 .slider_section .img-box img {
   width: 100%;
-  -webkit-animation: upDown 5s infinite;
-          animation: upDown 5s infinite;
 }
 
-@-webkit-keyframes upDown {
-  0% {
-    -webkit-transform: translateY(-45px);
-            transform: translateY(-45px);
-  }
-  50% {
-    -webkit-transform: translateY(45px);
-            transform: translateY(45px);
-  }
-  100% {
-    -webkit-transform: translateY(-45px);
-            transform: translateY(-45px);
-  }
-}
 
-@keyframes upDown {
-  0% {
-    -webkit-transform: translateY(-45px);
-            transform: translateY(-45px);
-  }
-  50% {
-    -webkit-transform: translateY(45px);
-            transform: translateY(45px);
-  }
-  100% {
-    -webkit-transform: translateY(-45px);
-            transform: translateY(-45px);
-  }
-}
 
 .slider_section .carousel-indicators {
   position: unset;
@@ -483,7 +454,7 @@ a:focus {
 }
 
 .about_section {
-  background-color: #00204a;
+    background: linear-gradient(130deg, #000000, #0f054c)
   color: #ffffff;
 }
 
@@ -624,7 +595,7 @@ a:focus {
   transition: all .1s;
   margin-top: 45px;
   background: -webkit-gradient(linear, left top, left bottom, from(#002759), to(#002b64));
-  background: linear-gradient(to bottom, #002759, #002b64);
+  background: linear-gradient(to bottom, #000000, #002b64);
 }
 
 .team_section .team_container .box .img-box {
@@ -775,7 +746,7 @@ a:focus {
 
 /* client section end */
 .info_section {
-  background-color: #00204a;
+   background: linear-gradient(130deg, #231a6f, #0f054c);
   color: #ffffff;
   padding: 45px 0 15px 0;
 }
@@ -916,6 +887,8 @@ a:focus {
   position: relative;
   background-color: #ffffff;
   text-align: center;
+  margin: 10px;
+
 }
 
 .footer_section p {
@@ -927,4 +900,29 @@ a:focus {
 .footer_section p a {
   color: inherit;
 }
+
+.footer_section .img-box{
+  padding:10px;
+}
+
+
+
+
 /*# sourceMappingURL=style.css.map */
+
+      @media (min-width: 992px) {
+        .col-md-1-5 { width: 20%; flex: 0 0 20%;}
+        .col-md-2-5 { width: 40%; flex: 0 0 40%;}
+        .col-md-3-5 { width: 60%; flex: 0 0 60%;}
+        .col-md-4-5 { width: 80%; flex: 0 0 80%;}
+        .col-md-5-5 { width: 100%; flex: 0 0 100%;}
+      }
+      @media (min-width: 1200px) {
+        .col-lg-1-5 { width: 20%; flex: 0 0 20%;}
+        .col-lg-2-5 { width: 40%; flex: 0 0 40%;}
+        .col-lg-3-5 { width: 60%; flex: 0 0 60%;}
+        .col-lg-4-5 { width: 80%; flex: 0 0 80%;}
+        .col-lg-5-5 { width: 100%; flex: 0 0 100%;}
+      }
+
+
